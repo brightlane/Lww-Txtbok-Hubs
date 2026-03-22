@@ -179,3 +179,112 @@ footer a:hover { color:#93c5fd;}
 </div>
 </div>
 </section>
+<section class="section" id="faq">
+<div class="container">
+<h2 class="section-title">❓ Frequently Asked Questions (FAQs)</h2>
+
+<div class="faq-item">
+<div class="faq-question">What is the best LWW nursing textbook for students?</div>
+<div class="faq-answer">
+<p>The <strong>Nursing Drug Handbook</strong> is widely regarded as the top choice for nursing students due to its comprehensive drug information, dosage calculations, and clinical tips. <a href="https://www.linkconnector.com/ta.php?lc=014538024578003224&atid=ShopLWW-Web&lcpt=0&lcpf=0" target="_blank" rel="nofollow sponsored">Buy Now</a></p>
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">Which LWW book is best for USMLE Step 1 prep?</div>
+<div class="faq-answer">
+<p><strong>Lippincott Illustrated Reviews</strong> series is perfect for USMLE Step 1 prep, covering biochemistry, pharmacology, microbiology, and anatomy with visual mnemonics. <a href="https://www.linkconnector.com/ta.php?lc=014538024578003224&atid=ShopLWW-Web&lcpt=0&lcpf=0" target="_blank" rel="nofollow sponsored">Shop Illustrated Reviews</a></p>
+</div>
+</div>
+
+<div class="faq-item">
+<div class="faq-question">Are there quick-reference pocket guides for clinical use?</div>
+<div class="faq-answer">
+<p>Yes! The <strong>Lippincott Pocket Drug Guide</strong> is portable, making it ideal for clinical rotations. <a href="https://www.linkconnector.com/ta.php?lc=014538024578003224&atid=ShopLWW-Web&lcpt=0&lcpf=0" target="_blank" rel="nofollow sponsored">Buy Pocket Guide</a></p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="legal-section">
+<div class="container">
+<h2 class="section-title">📜 Legal & Affiliate Disclosure</h2>
+<div class="legal-grid">
+<div class="legal-card">
+<h3>Affiliate Disclaimer</h3>
+<p>This site contains affiliate links to <strong>LWW textbooks</strong>. If you click a link and make a purchase, I may earn a small commission at no extra cost to you.</p>
+</div>
+<div class="legal-card">
+<h3>Medical Disclaimer</h3>
+<p>Content is for educational purposes only and not a substitute for professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider.</p>
+</div>
+<div class="legal-card">
+<h3>Privacy Policy</h3>
+<p>Your privacy is important. No personal data is collected unless voluntarily submitted via contact forms. All affiliate links are clearly marked.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section" id="backlink-launcher">
+<div class="container">
+<h2 class="section-title">🚀 Auto Backlink Launcher</h2>
+<p>Instantly copy prebuilt Reddit, Quora, and Medium posts with affiliate links to drive traffic and boost SEO.</p>
+<div class="grid">
+<div class="card">
+<h3>Reddit Post Template</h3>
+<p>“I just discovered the ultimate LWW nursing textbooks for clinical rotations. The <a href='https://www.linkconnector.com/ta.php?lc=014538024578003224&atid=ShopLWW-Web&lcpt=0&lcpf=0' target='_blank' rel='nofollow sponsored'>Nursing Drug Handbook</a> is a lifesaver!”</p>
+<button class="copy-btn" data-target="reddit">Copy Reddit Post</button>
+</div>
+<div class="card">
+<h3>Quora Answer Template</h3>
+<p>“For anyone asking about USMLE Step 1 prep, I highly recommend <a href='https://www.linkconnector.com/ta.php?lc=014538024578003224&atid=ShopLWW-Web&lcpt=0&lcpf=0' target='_blank' rel='nofollow sponsored'>Lippincott Illustrated Reviews</a>. It’s comprehensive and visual.”</p>
+<button class="copy-btn" data-target="quora">Copy Quora Answer</button>
+</div>
+<div class="card">
+<h3>Medium Article Snippet</h3>
+<p>“Top 5 nursing textbooks for students in 2026: <a href='https://www.linkconnector.com/ta.php?lc=014538024578003224&atid=ShopLWW-Web&lcpt=0&lcpf=0' target='_blank' rel='nofollow sponsored'>LWW Drug Handbook</a>, <a href='https://www.linkconnector.com/ta.php?lc=014538024578003224&atid=ShopLWW-Web&lcpt=0&lcpf=0' target='_blank' rel='nofollow sponsored'>Pocket Guide</a>, Illustrated Reviews… ”</p>
+<button class="copy-btn" data-target="medium">Copy Medium Snippet</button>
+</div>
+</div>
+</div>
+</section>
+
+<footer>
+<p>© 2026 All Rights Reserved. Affiliate links to <a href="https://www.linkconnector.com/ta.php?lc=014538024578003224&atid=ShopLWW-Web&lcpt=0&lcpf=0" target="_blank" rel="nofollow sponsored">LWW Textbooks</a>. Designed for students & medical professionals.</p>
+</footer>
+
+<script>
+// Daily Tip Rotation
+const tips = [
+{title:"Master Dosage Calculations", content:"Practice every day with the Nursing Drug Handbook to improve your pharmacology skills."},
+{title:"USMLE Step 1 Prep", content:"Use Illustrated Reviews daily for high-yield biochemistry and pharmacology review."},
+{title:"Pocket Guide On-the-Go", content:"Carry the Lippincott Pocket Drug Guide during clinical rotations for quick reference."}
+];
+function setDailyTip(){
+let index = new Date().getDate() % tips.length;
+document.getElementById("tipDate").innerText = `Tip for ${new Date().toLocaleDateString()}`;
+document.getElementById("tipTitle").innerText = tips[index].title;
+document.getElementById("tipContent").innerText = tips[index].content;
+}
+setDailyTip();
+
+// FAQ Toggle
+document.querySelectorAll('.faq-question').forEach(q=>{
+q.addEventListener('click',()=>{
+const item = q.parentElement;
+item.classList.toggle('active');
+});
+});
+
+// Auto Backlink Copy
+document.querySelectorAll('.copy-btn').forEach(btn=>{
+btn.addEventListener('click',()=>{
+const target = btn.previousElementSibling.innerText;
+navigator.clipboard.writeText(target).then(()=>{alert("Copied to clipboard!");});
+});
+});
+</script>
+
+</body>
+</html>
